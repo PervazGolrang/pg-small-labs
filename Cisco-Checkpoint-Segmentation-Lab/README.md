@@ -1,4 +1,4 @@
-# Cisco & Check Point Micro-Segmentation Lab
+# Cisco & Checkpoint Micro-Segmentation Lab
 
 This is a small lab to implement **Zero Trust Access Layer** design by mitigating east-west lateral movement (e.g. ransomware) by combining legacy **Cisco Protected Ports** (Layer 2 isolation) with **Checkpoint Firewall Policies** (Layer 3 segmentation).
 
