@@ -31,7 +31,7 @@ The IPs shown int he images are incorrect, as it is a copy from a previous lab, 
 
 ## 2. Setting up VLANs
 
-Correct VLAN set on eth1 will be implemented, derived from [IP_Plan.md](/Cisco-Checkpoint-Segmentation-Lab/docs/IP_Plan.md).
+The correct VLAN configuration for eth1 will be applied, based on the details provided in [IP_Plan.md](/Cisco-Checkpoint-Segmentation-Lab/docs/IP_Plan.md).
 
 ![Step01 - VLAN creation](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_VLANs.png)
 
@@ -39,9 +39,10 @@ Correct VLAN set on eth1 will be implemented, derived from [IP_Plan.md](/Cisco-C
 
 ## 3. Setting up DHCP
 
-DHCP Server has to be enabled at the top `Enable DHCP Server`, and in the configuration-box `Enable DHCP Subnet`.
+Enable the DHCP server, activate **Enable DHCP Server** at the top.  
+Then, in the configuration box, make sure **Enable DHCP Subnet** is also selected.
 
-The network address and subnet mask can be grabbed from the **Network Interfaces** from selecting `Get from interface..`.
+The network address and subnet mask can be selected from the **Network Interfaces** from selecting **Get from interface..**.
 
 ![Step01 - DHCP creation](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_DHCP.png)
 
