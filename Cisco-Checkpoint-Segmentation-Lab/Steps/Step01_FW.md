@@ -2,9 +2,9 @@
 
 This step is configuration on the Firewall, including GAiA and Smartconsole.
 
-## Note: 
-**Step 1 - 4 are in GAiA portal**
-**Step 5 - 8 are in SmartConsole**
+**Note:**  
+Step 1 - 4 are in GAiA portal  
+Step 5 - 6 are in SmartConsole  
 
 ---
 
