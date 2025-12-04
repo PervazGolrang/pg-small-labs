@@ -19,10 +19,11 @@ set interface eth1 ipv4-address 192.168.40.200 mask-length 24
 set static-route default nexthop gateway address 192.168.40.1 on
 set primary dns 192.168.40.1
 ```
+![Step01 - Smartconsole Login](/Cisco-Checkpoint-Segmentation-Lab/Images/step01_smartconsole_login.png)  
 
-[Step01 - SMS-Wizard](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_SMS-wizard.png)
-[Step01 - Smartconsole Login](/Cisco-Checkpoint-Segmentation-Lab/Images/step01_smartconsole_login.png)
-[Step01 - Smartconsole Session](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_Smartconsole_session.png)
+[Step01 - SMS-Wizard](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_SMS-wizard.png)  
+
+[Step01 - Smartconsole Session](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_Smartconsole_session.png)  
 
 The IPs shown int he images are incorrect, as it is a copy from a previous lab, logic follows the same. 
 
@@ -32,7 +33,7 @@ The IPs shown int he images are incorrect, as it is a copy from a previous lab, 
 
 Correct VLAN set on eth1 will be implemented, derived from [IP_Plan.md](/Cisco-Checkpoint-Segmentation-Lab/docs/IP_Plan.md).
 
-[Step01 - VLAN creation](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_VLANs.png)
+![Step01 - VLAN creation](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_VLANs.png)
 
 ---
 
@@ -42,7 +43,7 @@ DHCP Server has to be enabled at the top `Enable DHCP Server`, and in the config
 
 The network address and subnet mask can be grabbed from the **Network Interfaces** from selecting `Get from interface..`.
 
-[Step01 - DHCP creation](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_DHCP.png)
+![Step01 - DHCP creation](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_DHCP.png)
 
 Remember to include **address pool**, as by default, it will **NOT** select any. This will cause that the Alpine nodes will not recieve an IP Address.
 
@@ -52,8 +53,9 @@ Remember to include **address pool**, as by default, it will **NOT** select any.
 
 LLDP was a choice to set up. By default when enabling, all TLVs are non-selected. This will cause LLDP to be `active`, however, no information will be shared.
 
+![Step01 - LLDP Evidence](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_LLDP_evidence.png)  
+
 [Step01 - LLDP setup](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_LLDP.png)
-[Step01 - LLDP Evidence](/Cisco-Checkpoint-Segmentation-Lab/Images/Step01_LLDP_evidence.png)
 
 ---
 
