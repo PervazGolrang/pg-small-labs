@@ -6,4 +6,4 @@ This repository includes isolated configurations and quick tests. Single-device 
 
 | Project                                                                           | Description                                                                                                                        |
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [Cisco & Checkpoint Micro-Segmentation Lab](/Cisco-Checkpoint-Segmentation-Lab/) | Zero Trust design using Cisco Protected Ports and Check Point R82 to block lateral movement (East-West) and enforce L3 inspection. |
+| [Cisco & Checkpoint Micro-Segmentation Lab](/Cisco-Checkpoint-Segmentation-Lab/) | Zero Trust design using Cisco Protected Ports and Checkpoint R82 to block lateral movement (East-West) and enforce L3 inspection. |
