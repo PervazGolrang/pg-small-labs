@@ -5,7 +5,7 @@ This is a small lab to implement **Zero Trust Access Layer** design by mitigatin
 Note:
 The **Legacy** command `switchport protected` blocks unicast, multicast, and broadcast to all interfaces that have the `protected` configuration. This is a strong legacy feature, supporting even Catalyst 2960 (non-X and non-S). This is a cheap and easy alternative compared to PVLANS. The downside is reduced scalability and functionality, e.g. PVLANs `community`.
 
-The design enforced a "VLAN per Switch" architecture, ensuring that all inter-switch traffic must traverse the Firewall for inspection, while intra-switch traffic is blocked at the ASIC level.
+The design enforced a "VLAN per Switch" architecture, ensuring that all inter-switch traffic must traverse the Firewall for inspection, traffic between VLANs is blocked by switch configuration.
 
 ---
 
