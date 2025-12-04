@@ -21,7 +21,7 @@ Implemented in Cisco Modeling Labs  (CML)
 ---
 
 ## Topology
-![cisco_checkpoint_micro-segment-lab.png](/Cisco-Checkpoint-Segmentation-Lab/Images/cisco_checkpoint_micro-segment-lab.png.png)
+![cisco_checkpoint_micro-segment-lab.png](/Cisco-Checkpoint-Segmentation-Lab/Images/cisco_checkpoint_micro-segment-lab.png)
 
 ## Design Logic
 1. **Aggregator (SW01):** Trunks all VLANs to the Firewall.
