@@ -4,8 +4,8 @@ Alpine Linux is used to simulate endpoints, including Printer. Since these are l
 
 ---
 
-Username: `cisco`
-Password: `cisco`
+Username: `cisco`  
+Password: `cisco`  
 
 If everything is set up correctly, this should recieve an IP address.
 
