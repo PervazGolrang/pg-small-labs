@@ -28,8 +28,8 @@ ping -c 4 10.47.39.3
 ping -c 4 10.47.41.3
 # Result: 100% packet loss (Traffic dropped by FW)
 !
-# Attempt to ping Management Station (VLAN 99)
-ping -c 4 10.47.99.3
+# Attempt to ping Management Station (VLAN 199)
+ping -c 4 10.47.199.3
 # Result: 100% packet loss (Traffic dropped by FW)
 ```
 
@@ -50,7 +50,7 @@ ping -c 4 8.8.8.8
 
 # Test Connectivity to Printer (VLAN 170)
 ping -c 4 10.47.170.3
-# Result: 25% packet loss (Reply received, loss due to ARP)
+# Result: 0% packet loss (Reply received)
 ```
 
 ![Step06 - From PC1 PASS](/Cisco-Checkpoint-Segmentation-Lab/Images/Step06_pc_pass.png)
@@ -65,7 +65,7 @@ Confirm that IT Administrators can still reach endpoints for support and trouble
 
 ```bash
 # Test reachability to Client PC1
-ping -c 4 10.47.40.1
+ping -c 4 10.47.40.3
 # Result: 0% packet loss (Reply received)
 ```
 
