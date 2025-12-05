@@ -17,7 +17,7 @@ At the final step is validation of the Zero Trust Access Layer design, for mitig
 | PC1    | Printer     | PASS            | Allowed by Firewall Rule 4 (Print Services)            |
 | Mgmt   | PC1         | PASS            | Allowed by Admin/Management Policy                     |
 
-**From PC1 (10.47.40.10):**
+**From PC1 (10.47.40.3):**
 
 ```bash
 # Attempt to ping PC2 on a different switch (VLAN 101)
