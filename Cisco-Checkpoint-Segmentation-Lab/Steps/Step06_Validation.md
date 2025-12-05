@@ -21,15 +21,15 @@ At the final step is validation of the Zero Trust Access Layer design, for mitig
 
 ```bash
 # Attempt to ping PC2 on a different switch (VLAN 101)
-ping -c 4 10.47.39.10
+ping -c 4 10.47.39.3
 # Result: 100% packet loss (Traffic dropped by FW)
 !
 # Attempt to ping PC3 on a different switch (VLAN 103)
-ping -c 4 10.47.41.10
+ping -c 4 10.47.41.3
 # Result: 100% packet loss (Traffic dropped by FW)
 !
 # Attempt to ping Management Station (VLAN 99)
-ping -c 4 10.47.99.10
+ping -c 4 10.47.99.3
 # Result: 100% packet loss (Traffic dropped by FW)
 ```
 
@@ -49,7 +49,7 @@ ping -c 4 8.8.8.8
 # Result: 0% packet loss (Reply received)
 
 # Test Connectivity to Printer (VLAN 170)
-ping -c 4 10.47.170.2
+ping -c 4 10.47.170.3
 # Result: 25% packet loss (Reply received, loss due to ARP)
 ```
 
@@ -65,7 +65,7 @@ Confirm that IT Administrators can still reach endpoints for support and trouble
 
 ```bash
 # Test reachability to Client PC1
-ping -c 4 10.47.40.10
+ping -c 4 10.47.40.1
 # Result: 0% packet loss (Reply received)
 ```
 
