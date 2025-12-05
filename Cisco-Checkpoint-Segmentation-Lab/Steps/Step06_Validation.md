@@ -10,11 +10,11 @@ At the final step is validation of the Zero Trust Access Layer design, for mitig
 
 | Soirce | Destination | Expected Result | Logic / Rule                                           |
 |--------|-------------|-----------------|--------------------------------------------------------|
-| PC1    | PC2         | FAIL            | Blocked by Firewall Rule 3 (Inter-Switch Segmentation) |
-| PC1    | PC3         | FAIL            | Blocked by Firewall Rule 3 (Inter-Switch Segmentation) |
+| PC1    | PC2         | FAIL            | Blocked by Firewall Rule 5 (Inter-Switch Segmentation) |
+| PC1    | PC3         | FAIL            | Blocked by Firewall Rule 5 (Inter-Switch Segmentation) |
 | PC1    | Mgmt        | FAIL            | Blocked by Cleanup Rule (Network Segmentation)         |
-| PC1    | 8.8.8.8     | PASS            | Allowed by Firewall Rule 4 (Internet Access + NAT)     | 
-| PC1    | Printer     | PASS            | Allowed by Firewall Rule 2 (Print Services)            |
+| PC1    | 8.8.8.8     | PASS            | Allowed by Firewall Rule 6 (Internet Access + NAT)     | 
+| PC1    | Printer     | PASS            | Allowed by Firewall Rule 4 (Print Services)            |
 | Mgmt   | PC1         | PASS            | Allowed by Admin/Management Policy                     |
 
 **From PC1 (10.47.40.10):**
@@ -41,7 +41,7 @@ ping -c 4 10.47.199.3
 
 Confirm that security controls do not impede legitimate business workflows.
 
-**From PC1 (10.47.40.10):**
+**From PC1 (10.47.40.3):**
 
 ```bash
 # Test Internet Connectivity
