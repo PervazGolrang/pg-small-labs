@@ -16,7 +16,6 @@ First setup is in the CLI, so then I can use GAiA and Smartconsole.
 ```bash
 # External Interface (NAT)
 set interface eth1 ipv4-address 192.168.40.200 mask-length 24
-set static-route default nexthop gateway address 192.168.40.1 on
 set primary dns 192.168.40.1
 ```
 ![Step01 - Smartconsole Login](/Cisco-Checkpoint-Segmentation-Lab/Images/step01_smartconsole_login.png)  
