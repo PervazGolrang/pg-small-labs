@@ -53,7 +53,7 @@ interface range vlan101-103, vlan170, vlan199
 !
 ```
 
-Do note that I am utilizing SVI, if I wanted the traffic to be seen by the firewall, then SVI has to be removed, else, it will not pass to the firewall for logging.
+Note: This configuration does use SVIs on the switch, so inter‑VLAN and routed traffic is terminated on SW01. If I wanted traffic to be logged by the firewall, the firewall must be the routing gateway for those VLANs. Alternatively, I can use a different method by using a SPAN session to send a copy of the traffic to the firewall for monitoring or logging, however, that would be unecessarily complicated than just removing SVI in general.
 
 ---
 
