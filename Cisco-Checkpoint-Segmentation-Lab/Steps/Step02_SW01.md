@@ -53,6 +53,8 @@ interface range vlan101-103, vlan170, vlan199
 !
 ```
 
+Do note that I am utilizing SVI, if I wanted the traffic to be seen by the firewall, then SVI has to be removed, else, it will not pass to the firewall for logging.
+
 ---
 
 ## 3.0 Interface configuration:
